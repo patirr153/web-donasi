@@ -10,7 +10,7 @@
 
     <div class="row text-start mt-5">
         <div class="col-md-4">
-            <div class="card border-0 shadow-sm">
+            <div class="card border-0 shadow-sm p-3">
                 <h3>Mudah</h3>
                 <p>Isi data singkat, pilih kategori, dan kirim donasi anda dalama hitungan menit.</p>
         </div>

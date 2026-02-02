@@ -25,7 +25,13 @@
                     <h6 class="text-muted mb-3 fw-bold text-uppercase" style="font-size: 0.8rem;">Informasi Donatur</h6>
                     <div class="mb-3">
                         <class="form-label">Nama Lengkap</label>
-                        <input type="text" name="nama_donatur" class="form-control" placeholder="Contoh: budi cobra" required>
+                        <input type="text" name="nama_donatur" class="form-control" placeholder="Contoh: budi cobra"
+                        class="form-control" @error('nama_donatur') is-invalid @enderror
+                        value="{{ old('nama_donatur') }}" required>
+                        @error('nama_donatur')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                        
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
